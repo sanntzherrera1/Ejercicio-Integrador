@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Integrador</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <header id="header_venta">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="img/codoacodo.png" alt="logo_cac" width="90" height="50" class="d-inline-block">
+              Conf Bs As
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                <a class="nav-link" href="#">Los oradores</a>
+                <a class="nav-link" href="#">El lugar y la fecha</a>
+                <a class="nav-link" href="#">Conviertete en orador</a>
+                <a class="nav-link text-success"  href="#">Comprar tickets</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+<main>
+  <section class="section-one-venta">
+    <div class="card rounded-0 border-primary mb-3" style="max-width: 18rem;">
+      <div class="card-body ">
+        <h5 class="card-title">Estudiante</h5>
+        <p class="card-text lh-md fs-5">Tienen un descuento</p>
+        <p class="card-text fw-bold lh-md fs-5">80%</p>
+        <p class="card-text lh-lg">*presentar documentacion</p>
+
+      </div>
+    </div>
+
+    <div class="card rounded-0 border-info mb-3" style="max-width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Trainee</h5>
+        <p class="card-text lh-md fs-5">Tienen un descuento</p>
+        <p class="card-text fw-bold lh-md fs-5">50%</p>
+        <p class="card-text lh-lg">*presentar documentacion</p>
+      </div>
+    </div>
+
+    <div class="card rounded-0 border-warning mb-3" style="max-width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Junior</h5>
+        <p class="card-text lh-md fs-5">Tienen un descuento</p>
+        <p class="card-text fw-bold lh-md fs-5">15%</p>
+        <p class="card-text lh-lg">*presentar documentacion</p>
+      </div>
+    </div>
+  </section>
+  <p class="titulo-venta"> VENTA </p>
+  <h2> VALOR DE TICKET $200 </h2>
+
+
+<section class="section-two-form">
+  <div class="col-5">
+    <form>
+        <div class="row mt-3">
+            <div class="col-sm-12 col-md-6 mt-1">
+                <input  type="text" onkeypress="SoloLetras(Event)"class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class=" col-sm-12 col-md-6 mt-1">
+                <input type="text" onkeypress="SoloLetras(Event)"class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>    
+        </div>
+
+       <div class="mb-3 mt-3">
+            <input type="email" class="form-control"placeholder="Correo"  id="exampleInputEmail1" aria-describedby="emailHelp">
+       </div>
+     
+       <div class="row mt-3">
+                <div class="col-sm-12 col-md-6 ">
+                    <label for="exampleInputEmail1" class="form-label">Cantidad</label>
+                    <input id="cantidaticket" type="text" class="form-control" placeholder="Cantidad" aria-label="cantidad">
+                </div>
+                <div class=" col-sm-12 col-md-6">
+                    <label for="exampleInputEmail1" class="form-label" >Categoria</label>
+                    <select id="categoria" class="form-select" aria-label="Default select example">
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>             
+                
+                
+                <div class="col-sm-12  mt-3">
+                   <p id="ptotal" class="total fs-5 p-3">Total a pagar: $</p>    
+                </div>
+       </div>
+
+        <div class="row mt-3">
+            <div class=" col ">
+                <button type="reset" class="borrarResumen fs-5 col btn  col-12 " onclick="borraResumen()">Borrar</button>
+            </div> 
+            <div class="col  "> 
+                 <button onclick="resumenFuncion()" class="borrarResumen fs-5 col btn col-12 " type="button">Resumen</button>     
+            </div>
+        </div>
+    </form>
+  </div>  
+
+</main>
+
+
+  
+
+<br>
+<footer >
+    <div class="cointainer-fluid bg-dark d-flex justify-content-center"> 
+        <ul class="nav d-flex col-9 justify-content-around fs-6 bg-dark align-items-center ">
+            <li class="nav-item ">
+              <a class="nav-link text-white active"  aria-current="page" href="#">Preguntas<br> Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link" href="#">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link" href="#">Prensa</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link disabled">Conferencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link disabled">Términos y<br> condiciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link disabled">Privacidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link disabled">Estudiantes</a>
+            </li>
+        </ul>
+    </div>    
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="venta_ticket.js"></script> 
+
+</body>
+</html>

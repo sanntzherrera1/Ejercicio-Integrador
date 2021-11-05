@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header{
+#header_principal{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/ba1.jpg");
     background-size: 100% 100%;
     min-height: 90vh;
@@ -14,7 +14,63 @@ header{
     margin-top: 2em;
 }
 
-
 .section-three{
     margin-top: 2em;
 }
+
+
+/****************** CSS VENTA DE TICKETS****************/
+
+#header_venta{
+    min-height: 5vh;
+}
+
+main{
+    min-height: 78vh;
+}
+
+main .titulo-venta{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.section-one-venta{
+    display: flex;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.section-one-venta .card{
+    min-width: 25vh;
+    max-height: 23vh;
+    margin-right: 0.5em;
+    text-align: center;
+}
+
+.section-one-venta .card p{
+    padding-bottom: 0.5em;
+}
+
+h2{
+    text-align: center;
+}
+
+.section-two-form{
+    display: flex;
+    justify-content: center;
+}
+
+.section-two-form .borrarResumen{
+    color: white;
+    background-color:  rgba(139, 201, 47, 0.979);
+}
+
+.section-two-form .total{
+    background-color: rgb(201, 233, 254);
+}
+
+
+
+
